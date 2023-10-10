@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palindrome Program</title>
+  </head>
+  <body><center>
+    <h1>Palindrome number or not??</h1>
+    Enter a number:<input type="text" id="a"><br>
+    <button onclick="checkPalindrome()">Check</button>
+    <script>
+      function checkPalindrome() {
+        const inputElement = document.getElementById("a");
+        const number = parseInt(inputElement.value);
+        if (isPalindrome(number)) {
+          window.alert(number + " is a palindrome.");
+        } else {
+          window.alert(number + " is not a palindrome.");
+        }
+      }
+
+      function isPalindrome(num) {  
+        const numStr = num.toString();
+        const reversedStr = numStr.split('').reverse().join(''); 
+        return numStr === reversedStr;
+      }
+    </script></center>
+  </body>
+</html>

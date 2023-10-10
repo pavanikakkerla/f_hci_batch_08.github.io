@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Array Elements</title>
+</head>
+<body>
+    <h1>Array Elements:</h1>
+    <div id="output"></div>
+
+    <script>
+        // Define an array
+        const myArray = [1, 2, 3, 4, 5];
+
+        // Get a reference to the output element
+        const outputElement = document.getElementById("output");
+
+        // Function to display array elements
+        function displayArrayElements(array) {
+            // Clear any existing content in the output element
+            outputElement.innerHTML = "";
+
+            // Iterate through the array and display each element
+            for (let i = 0; i < array.length; i++) {
+                const element = array[i];
+                const elementElement = document.createElement("p");
+                elementElement.textContent = "Element " + (i + 1) + ": " + element;
+                outputElement.appendChild(elementElement);
+            }
+        }
+
+        // Call the function to display array elements
+        displayArrayElements(myArray);
+    </script>
+</body>
+</html>

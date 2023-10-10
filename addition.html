@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            var x,y,z;
+            x=parseInt(document.getElementById("a").value);
+            y=parseInt(document.getElementById("b").value);
+            z=x+y;
+            document.writeln("Sum is:",z);
+        }
+    </script>
+</head>
+<body><center>
+    <fieldset>
+    <h1> Addition of two numbers</h1>
+    Enter value1:<input type="text" id="a"><br><br>
+    Enter value2:<input type="text" id="b"><br><br>
+    <button type="button" onclick="add()">Add</button>
+</fieldset>
+</center>
+</body>
+</html>

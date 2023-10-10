@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <style>
+        /* CSS styles for the blog */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+    </header>
+    <main>
+        <div class="post">
+            <h2>Welcome Guys!!</h2>
+            <p>This is the content of my first blog post.</p>
+        </div>
+        <div class="post">
+            <h2>A Day in my life.</h2>
+            <p>Today I wanted to write about how a day goes on in my life. Hope you will enjoy this blog.</p>
+        </div>
+    </main>
+
+    <script>
+        function displayDateTime() {
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleString();
+            alert(Current Date and Time: ${formattedDate});
+        }
+
+        window.onload = displayDateTime;
+    </script>
+</body>
+</html>
